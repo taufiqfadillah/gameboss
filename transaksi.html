@@ -1,187 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-    <!-- BEGIN: Head -->
-    <head>
-        <meta charset="utf-8">
-        <link href="dist/images/logo-white.ico" rel="shortcut icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Taufiqproject admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
-        <meta name="keywords" content="admin template, Taufiqproject Admin Template, dashboard template, flat admin template, responsive admin template, web app">
-        <meta name="author" content="LEFT4CODE">
-        <title>Transaksi | Gameboss</title>
-        <!-- BEGIN: CSS Assets-->
-        <link rel="stylesheet" href="dist/css/app.css" />
-        <!-- END: CSS Assets-->
-    </head>
-    <!-- END: Head -->
-    <body class="py-5">
-        <!-- BEGIN: Mobile Menu -->
-        <div class="mobile-menu md:hidden">
-            <div class="mobile-menu-bar">
-                <a href="" class="flex mr-auto">
-                    <img alt="Taufiqproject - HTML Admin Template" class="w-6" src="dist/images/logo-white.png">
-                </a>
-                <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
-            </div>
-            <div class="scrollable">
-                <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
-                <ul class="scrollable__content py-2">
-                    <li>
-                        <a href="index.html" class="menu">
-                            <div class="menu__icon"> <i data-lucide="home"></i> </div>
-                            <div class="menu__title"> Beranda </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="editpassword.html" class="menu">
-                            <div class="menu__icon"> <i data-lucide="lock"></i> </div>
-                            <div class="menu__title"> Edit Password</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="transaksi.html" class="menu menu--active">
-                            <div class="menu__icon"> <i data-lucide="bar-chart-2"></i> </div>
-                            <div class="menu__title"> Transaksi </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="datamaster.html" class="menu">
-                            <div class="menu__icon"> <i data-lucide="hard-drive"></i> </div>
-                            <div class="menu__title"> Data Master </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="laporan.html" class="menu">
-                            <div class="menu__icon"> <i data-lucide="help-circle"></i> </div>
-                            <div class="menu__title"> Laporan </div>
-                        </a>
-                    </li>
-                    <li class="menu__devider my-6"></li>
-                    <li>
-                        <a href="login.html" class="menu">
-                            <div class="menu__icon"> <i data-lucide="power"></i> </div>
-                            <div class="menu__title"> Keluar </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/logo-white.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Taufiqproject admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Taufiqproject Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Transaksi | Gameboss</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="py-5">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="" class="flex mr-auto">
+                <img alt="Taufiqproject - HTML Admin Template" class="w-6" src="dist/images/logo-white.png">
+            </a>
+            <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="bar-chart-2"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
         </div>
-        <!-- END: Mobile Menu -->
-        <div class="flex mt-[4.7rem] md:mt-0">
-            <!-- BEGIN: Side Menu -->
-            <nav class="side-nav">
-                <a href="" class="intro-x flex items-center pl-5 pt-4">
-                    <img alt="Taufiqproject - HTML Admin Template" class="w-18" src="dist/images/header-logo.png">
-                    <!-- <span class="hidden xl:block text-white text-lg ml-3"> Rubick </span>  -->
-                </a>
+        <div class="scrollable">
+            <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            <ul class="scrollable__content py-2">
+                <li>
+                    <a href="index.html" class="menu">
+                        <div class="menu__icon"> <i data-lucide="home"></i> </div>
+                        <div class="menu__title"> Beranda </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="editpassword.html" class="menu">
+                        <div class="menu__icon"> <i data-lucide="lock"></i> </div>
+                        <div class="menu__title"> Edit Password</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transaksi.html" class="menu menu--active">
+                        <div class="menu__icon"> <i data-lucide="bar-chart-2"></i> </div>
+                        <div class="menu__title"> Transaksi </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="datamaster.html" class="menu">
+                        <div class="menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                        <div class="menu__title"> Data Master </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="laporan.html" class="menu">
+                        <div class="menu__icon"> <i data-lucide="help-circle"></i> </div>
+                        <div class="menu__title"> Laporan </div>
+                    </a>
+                </li>
+                <li class="menu__devider my-6"></li>
+                <li>
+                    <a href="login.html" class="menu">
+                        <div class="menu__icon"> <i data-lucide="power"></i> </div>
+                        <div class="menu__title"> Keluar </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Mobile Menu -->
+    <div class="flex mt-[4.7rem] md:mt-0">
+        <!-- BEGIN: Side Menu -->
+        <nav class="side-nav">
+            <a href="" class="intro-x flex items-center pt-4">
+                <img alt="Taufiqproject - HTML Admin Template" class="w-18" src="dist/images/header-logo.png">
+                <!-- <span class="hidden xl:block text-white text-lg ml-3"> Rubick </span>  -->
+            </a>
+            <div class="side-nav__devider my-6"></div>
+            <ul>
+                <li>
+                    <a href="index.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
+                        <div class="side-menu__title">
+                            Beranda
+                            <div class="side-menu__sub-icon transform rotate-180"> </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="editpassword.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-lucide="lock"></i> </div>
+                        <div class="side-menu__title"> Edit Password </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="transaksi.html" class="side-menu side-menu--active">
+                        <div class="side-menu__icon"> <i data-lucide="bar-chart-2"></i> </div>
+                        <div class="side-menu__title"> Transaksi </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="datamaster.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                        <div class="side-menu__title"> Data Master </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="laporan.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-lucide="help-circle"></i> </div>
+                        <div class="side-menu__title"> Laporan </div>
+                    </a>
+                </li>
                 <div class="side-nav__devider my-6"></div>
-                <ul>
-                    <li>
-                        <a href="index.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
-                            <div class="side-menu__title">
-                                Beranda 
-                                <div class="side-menu__sub-icon transform rotate-180"> </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="editpassword.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="lock"></i> </div>
-                            <div class="side-menu__title"> Edit Password </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="transaksi.html" class="side-menu side-menu--active">
-                            <div class="side-menu__icon"> <i data-lucide="bar-chart-2"></i> </div>
-                            <div class="side-menu__title"> Transaksi </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="datamaster.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="hard-drive"></i> </div>
-                            <div class="side-menu__title"> Data Master </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="laporan.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="help-circle"></i> </div>
-                            <div class="side-menu__title"> Laporan </div>
-                        </a>
-                    </li>
-                    <div class="side-nav__devider my-6"></div>
-                    <li>
-                        <a href="login.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="power"></i> </div>
-                            <div class="side-menu__title"> Keluar </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- END: Side Menu -->
-            <!-- BEGIN: Content -->
-            <div class="content">
-                <!-- BEGIN: Top Bar -->
-                <div class="top-bar">
-                    <!-- BEGIN: Breadcrumb -->
-                    <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Gameboss</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Transaksi</li>
-                        </ol>
-                    </nav>
-                    <!-- END: Breadcrumb -->
-                    <!-- BEGIN: Account Menu -->
-                    <div class="intro-x dropdown w-8 h-8">
-                        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-tw-toggle="dropdown">
-                            <img alt="Taufiqproject - HTML Admin Template" src="dist/images/logo-purple.png">
-                        </div>
-                        <div class="dropdown-menu w-56">
-                            <ul class="dropdown-content bg-primary text-white">
-                                <li class="p-2">
-                                    <div class="font-medium">Ryan</div>
-                                    <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Administrator</div>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider border-white/[0.08]">
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile </a>
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider border-white/[0.08]">
-                                </li>
-                                <li>
-                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
-                                </li>
-                            </ul>
-                        </div>
+                <li>
+                    <a href="login.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-lucide="power"></i> </div>
+                        <div class="side-menu__title"> Keluar </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Side Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar">
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Gameboss</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Transaksi</li>
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in"
+                        role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="Taufiqproject - HTML Admin Template" src="dist/images/logo-purple.png">
                     </div>
-                    <!-- END: Account Menu -->
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-primary text-white">
+                            <li class="p-2">
+                                <div class="font-medium">Ryan</div>
+                                <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Administrator</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user"
+                                        class="w-4 h-4 mr-2"></i> Profile </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit"
+                                        class="w-4 h-4 mr-2"></i> Add Account </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock"
+                                        class="w-4 h-4 mr-2"></i> Reset Password </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle"
+                                        class="w-4 h-4 mr-2"></i> Help </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right"
+                                        class="w-4 h-4 mr-2"></i> Logout </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- END: Account Menu -->
             </div>
-            <!-- END: Content -->
         </div>
-        <!-- BEGIN: Dark Mode Switcher-->
-        <div data-url="index.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
-            <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
-            <div class="dark-mode-switcher__toggle border"></div>
-        </div>
-        <!-- END: Dark Mode Switcher-->
-        
-        <!-- BEGIN: JS Assets-->
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
-        <script src="dist/js/app.js"></script>
-        <!-- END: JS Assets-->
-    </body>
+        <!-- END: Content -->
+    </div>
+    <!-- BEGIN: Dark Mode Switcher-->
+    <div data-url="index.html"
+        class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+        <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
+        <div class="dark-mode-switcher__toggle border"></div>
+    </div>
+    <!-- END: Dark Mode Switcher-->
+
+    <!-- BEGIN: JS Assets-->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
 </html>
