@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo-white.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Taufiqproject admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template, Taufiqproject Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="LEFT4CODE">
+        <title>Dashboard | Gameboss</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="Taufiqproject - HTML Admin Template" class="w-6" src="dist/images/logo-white.png">
+                </a>
+                <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <div class="scrollable">
+                <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+                <ul class="scrollable__content py-2">
+                    <li>
+                        <a href="javascript:;.html" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="home"></i> </div>
+                            <div class="menu__title"> Beranda </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="editpassword.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="lock"></i> </div>
+                            <div class="menu__title"> Edit Password</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transaksi.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="bar-chart-2"></i> </div>
+                            <div class="menu__title"> Transaksi </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="datamaster.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                            <div class="menu__title"> Data Master </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laporan.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="help-circle"></i> </div>
+                            <div class="menu__title"> Laporan </div>
+                        </a>
+                    </li>
+                    <li class="menu__devider my-6"></li>
+                    <li>
+                        <a href="login.html" class="menu">
+                            <div class="menu__icon"> <i data-lucide="power"></i> </div>
+                            <div class="menu__title"> Keluar </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Mobile Menu -->
+        <div class="flex mt-[4.7rem] md:mt-0">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Taufiqproject - HTML Admin Template" class="w-18" src="dist/images/header-logo.png">
+                    <!-- <span class="hidden xl:block text-white text-lg ml-3"> Rubick </span>  -->
+                </a>
+                <div class="side-nav__devider my-6"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:;.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
+                            <div class="side-menu__title">
+                                Beranda 
+                                <div class="side-menu__sub-icon transform rotate-180"> </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="editpassword.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="lock"></i> </div>
+                            <div class="side-menu__title"> Edit Password </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transaksi.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="bar-chart-2"></i> </div>
+                            <div class="side-menu__title"> Transaksi </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="datamaster.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                            <div class="side-menu__title"> Data Master </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laporan.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="help-circle"></i> </div>
+                            <div class="side-menu__title"> Laporan </div>
+                        </a>
+                    </li>
+                    <div class="side-nav__devider my-6"></div>
+                    <li>
+                        <a href="login.html" class="side-menu">
+                            <div class="side-menu__icon"> <i data-lucide="power"></i> </div>
+                            <div class="side-menu__title"> Keluar </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Gameboss</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+                        </ol>
+                    </nav>
+                    <!-- END: Breadcrumb -->
+                    <!-- BEGIN: Account Menu -->
+                    <div class="intro-x dropdown w-8 h-8">
+                        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                            <img alt="Taufiqproject - HTML Admin Template" src="dist/images/logo-purple.png">
+                        </div>
+                        <div class="dropdown-menu w-56">
+                            <ul class="dropdown-content bg-primary text-white">
+                                <li class="p-2">
+                                    <div class="font-medium">Ryan</div>
+                                    <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Administrator</div>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider border-white/[0.08]">
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider border-white/[0.08]">
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END: Account Menu -->
+                </div>
+                <!-- BEGIN: Form List -->
+                <div class="intro-y flex items-center mt-8">
+                    <h2 class="text-lg font-medium mr-auto">
+                        Form Pembayaran
+                    </h2>
+                </div>
+                <small class="intro-y">Selalu periksa waktu anda, Untuk memastikan kepuasan maksimal!</>
+                <div class="intro-y grid grid-cols-12 gap-6 mt-5">
+                    <div class="intro-y col-span-12 lg:col-span-12">
+                        <!-- BEGIN: Form Layout -->
+                        <div class="intro-y box p-5 mb-10">
+                            <div>
+                                <label for="operator" class="form-label">Operator</label>
+                                <input id="operator" name="operator" type="text" class="form-control w-full" placeholder="Nama operator otomasis akan muncul..." disabled>
+                            </div>
+                            <div>
+                                <label for="nama" class="form-label">Nama</label>
+                                <input id="nama" name="nama" type="text" class="form-control w-full" placeholder="Masukkan Nama...">
+                            </div>
+                            <div class="mt-3">
+                                <label for="durasi" class="form-label">Durasi</label>
+                                <select data-placeholder="Pilih durasi permainan..." class="tom-select w-full" id="durasi" name="durasi" multiple>
+                                    <option value="1 Jam">1 Jam</option>
+                                    <option value="2 Jam">2 Jam</option>
+                                    <option value="3 Jam">3 Jam</option>
+                                    <option value="4 Jam">4 Jam</option>
+                                    <option value="Paket 5 Jam">Paket 5 Jam</option>
+                                    <option value="Paket Begadang">Paket Begadang</option>
+                                    <option value="Paket Gamers">Paket Gamers</option>
+                                    <option value="Paket Sultan">Paket Sultan</option>
+                                </select>
+                            </div>
+                            <div class="mt-3">
+                                <label for="unit" class="form-label">Unit</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">TV</div>
+                                    <input id="unit" name="unit" type="text" class="form-control" placeholder="Masukkan Unit..." aria-describedby="input-group-3">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label for="biaya" class="form-label">Biaya</label>
+                                <div class="input-group">
+                                    <input id="biaya" name="biaya" type="text" class="form-control" placeholder="Biaya otomatis akan muncul..." aria-describedby="input-group-2" disabled>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <label>Setuju</label>
+                                <div class="form-switch mt-2">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+                            </div>
+                            <div class="text-right mt-5">
+                                <button type="button" class="btn btn-outline-secondary w-24 mr-1">Batalkan</button>
+                                <button type="button" class="btn btn-primary w-24">Cetak</button>
+                            </div>
+                        </div>
+                        <!-- END: Form Layout -->
+                    </div>
+                </div>
+                <!-- END: Form List -->
+
+
+                <!-- END: Top Bar -->
+                <h2 class="intro-y text-lg font-medium mt-10">
+                    Daftar Data Pengguna
+                </h2>
+                <div class="grid grid-cols-12 gap-6 mt-5">
+                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
+                        <button class="btn btn-primary shadow-md mr-2">Tambah Data</button>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle btn px-2 box" aria-expanded="false" data-tw-toggle="dropdown">
+                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
+                            </button>
+                            <div class="dropdown-menu w-40">
+                                <ul class="dropdown-content">
+                                    <li>
+                                        <a href="" class="dropdown-item"> <i data-lucide="printer" class="w-4 h-4 mr-2"></i> Print </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Export to Excel </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dropdown-item"> <i data-lucide="file-text" class="w-4 h-4 mr-2"></i> Export to PDF </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:block mx-auto text-slate-500"></div>
+                        <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                            <div class="w-56 relative text-slate-500">
+                                <input type="text" class="form-control w-56 box pr-10" placeholder="Cari data...">
+                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BEGIN: Data List -->
+                    <div class="intro-y col-span-12 overflow-auto lg:overflow-visible">
+                        <table class="table table-report -mt-2">
+                            <thead>
+                                <tr>
+                                    <th class="whitespace-nowrap">OPERATOR</th>
+                                    <th class="whitespace-nowrap">NAMA PENGGUNA</th>
+                                    <th class="text-center whitespace-nowrap">TV</th>
+                                    <th class="text-center whitespace-nowrap">DURASI</th>
+                                    <th class="text-center whitespace-nowrap">STATUS</th>
+                                    <th class="text-center whitespace-nowrap">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="intro-x">
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">Ryan</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Administrator</div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">John Doe</a> 
+                                    </td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">2 Jam</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">02 : 00</div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                            <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">Ryan</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Administrator</div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">John Doe</a> 
+                                    </td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">2 Jam</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">02 : 00</div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                            <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">Ryan</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Administrator</div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">John Doe</a> 
+                                    </td>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">2 Jam</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">02 : 00</div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                            <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">Ryan</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Administrator</div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">John Doe</a> 
+                                    </td>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">2 Jam</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">02 : 00</div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-warning"> <i data-lucide="pause" class="w-4 h-4 mr-2"></i> Pending </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                            <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="intro-x">
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">Ryan</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">Administrator</div>
+                                    </td>
+                                    <td>
+                                        <a href="" class="font-medium whitespace-nowrap">John Doe</a> 
+                                    </td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">
+                                        <a href="" class="font-medium whitespace-nowrap">2 Jam</a> 
+                                        <div class="text-slate-500 text-xs whitespace-nowrap mt-0.5">02 : 00</div>
+                                    </td>
+                                    <td class="w-40">
+                                        <div class="flex items-center justify-center text-success"> <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                    </td>
+                                    <td class="table-report__action w-56">
+                                        <div class="flex justify-center items-center">
+                                            <a class="flex items-center mr-3" href="javascript:;"> <i data-lucide="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
+                                            <a class="flex items-center text-danger" href="javascript:;" data-tw-toggle="modal" data-tw-target="#delete-confirmation-modal"> <i data-lucide="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END: Data List -->
+                    <!-- BEGIN: Pagination -->
+                    <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center mb-10">
+                        <nav class="w-full sm:w-auto sm:mr-auto">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-left"></i> </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-left"></i> </a>
+                                </li>
+                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                                <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+                                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevron-right"></i> </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"> <i class="w-4 h-4" data-lucide="chevrons-right"></i> </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <select class="w-20 form-select box mt-3 sm:mt-0">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>35</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+                    <!-- END: Pagination -->
+                </div>
+                <!-- BEGIN: Delete Confirmation Modal -->
+                <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <div class="p-5 text-center">
+                                    <i data-lucide="x-circle" class="w-16 h-16 text-danger mx-auto mt-3"></i> 
+                                    <div class="text-3xl mt-5">Are you sure?</div>
+                                    <div class="text-slate-500 mt-2">
+                                        Do you really want to delete these records? 
+                                        <br>
+                                        This process cannot be undone.
+                                    </div>
+                                </div>
+                                <div class="px-5 pb-8 text-center">
+                                    <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-24 mr-1">Cancel</button>
+                                    <button type="button" class="btn btn-danger w-24">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Delete Confirmation Modal -->
+            </div>
+            <!-- END: Content -->
+        </div>
+        <!-- BEGIN: Dark Mode Switcher-->
+        <div data-url="index.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div>
+        <!-- END: Dark Mode Switcher-->
+        
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>
