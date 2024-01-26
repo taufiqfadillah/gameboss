@@ -1,8 +1,8 @@
 .side-nav {
-  width: 230px;
+  width: 190px;
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: 20px;
+  height: 100%;
   overflow-y: auto;
   @apply pr-5 pb-16 overflow-x-hidden;
   @include media-breakpoint-down(xl) {
@@ -30,7 +30,7 @@
   }
   .side-menu {
     height: 50px;
-    @apply flex items-center pl-5 text-white mb-1 relative rounded-full dark:text-slate-300;
+    @apply flex items-center pl-5 text-white mb-4 relative rounded-full dark:text-slate-300;
     .side-menu__title {
       @apply w-full ml-3 flex items-center;
       .side-menu__sub-icon {
@@ -160,6 +160,10 @@
       }
     }
   }
+}
+
+.side-nav ul li {
+  padding-bottom: 15px;
 }
 
 @keyframes intro-devider-animation {

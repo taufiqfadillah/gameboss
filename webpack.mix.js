@@ -24,5 +24,5 @@ mix
     processCssUrls: false,
   })
   .copyDirectory("src/json", "dist/json")
-  .copyDirectory("src/fonts", "dist/fonts");
-// .copyDirectory("src/images", "dist/images");
+  .copyDirectory("src/fonts", "dist/fonts")
+  .copyDirectory("src/images", "dist/images");
