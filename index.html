@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="dist/css/app.css" />
     <!-- END: CSS Assets-->
     <style>
-        .side-nav {
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            overflow-y: auto;
+        .content {
+            background-image: url(dist/images/Background-01.jpg);
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -71,7 +71,7 @@
                     </a>
                 </li>
                 <li class="menu__devider my-6"></li>
-                <li>
+                <li class="absolute bottom-0 left-0">
                     <a href="login.html" class="menu">
                         <div class="menu__icon"> <i data-lucide="power"></i> </div>
                         <div class="menu__title"> Keluar </div>
@@ -124,7 +124,7 @@
                     </a>
                 </li>
                 <div class="side-nav__devider my-6"></div>
-                <li>
+                <li class="absolute bottom-0 left-0 mb-10">
                     <a href="login.html" class="side-menu">
                         <div class="side-menu__icon"> <i data-lucide="power"></i> </div>
                         <div class="side-menu__title"> Keluar </div>
@@ -145,6 +145,13 @@
                     </ol>
                 </nav>
                 <!-- END: Breadcrumb -->
+                <!-- BEGIN: Profile Name -->
+                <nav class="intro-x relative mr-4 sm:mr-6">
+                    <ol class="profile">
+                        <li class="profile-item active font-medium" aria-current="page">Flaeup</li>
+                    </ol>
+                </nav>
+                <!-- END: Profile Name -->
                 <!-- BEGIN: Account Menu -->
                 <div class="intro-x dropdown w-8 h-8">
                     <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in"
@@ -257,12 +264,11 @@
                 </h2>
                 <div class="grid grid-cols-12 gap-6 mt-5">
                     <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-                        <button class="btn btn-primary shadow-md mr-2">Tambah Data</button>
                         <div class="dropdown">
                             <button class="dropdown-toggle btn px-2 box" aria-expanded="false"
                                 data-tw-toggle="dropdown">
                                 <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4"
-                                        data-lucide="plus"></i> </span>
+                                        data-lucide="download"></i> </span>
                             </button>
                             <div class="dropdown-menu w-40">
                                 <ul class="dropdown-content">

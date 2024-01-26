@@ -1,5 +1,9 @@
 .side-nav {
   width: 230px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
   @apply pr-5 pb-16 overflow-x-hidden;
   @include media-breakpoint-down(xl) {
     width: 85px;
