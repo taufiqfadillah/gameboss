@@ -25,6 +25,7 @@ import "@left4code/tw-starter/dist/js/tab";
 import "./chart";
 import "./highlight";
 import "./lucide";
+import "./loader";
 import "./tiny-slider";
 import "./tippy";
 import "./datepicker";
